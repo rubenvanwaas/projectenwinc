@@ -1,0 +1,173 @@
+body {
+  background-image: url(../images/1422987.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: white;
+}
+
+* {
+  padding: 0;
+}
+
+.logo {
+  width: 35%;
+  text-align: center;
+}
+
+/*
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  margin-bottom: -5px;
+}
+*/
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-size: 1.2em; 
+}
+
+hr {
+  border-color: white;
+  border-style: solid none none;
+  border-width: 4px;
+  width: 7%;
+
+}
+
+ul {
+  list-style: none;
+  border-top: 2px solid white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+li {
+  padding-top: 0.5rem;
+  margin-right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  margin-top: 30%;
+  text-align: center;
+}
+
+.container {
+  width: 30%;
+  justify-content: center;
+}
+
+.task {
+  display: flex;
+  margin-top: 35px;
+}
+
+.icon {
+  background: transparent;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.todo {
+  background: rgba(225, 225, 225, .2);
+}
+
+.completed {
+  background: rgba(225, 225, 225, .2);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Style the search field */
+div.task input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 85%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+div.task button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+div.task button:hover {
+  background: #0b7dda;
+}
+
+div.task::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
+
+.inputEditTask {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serrif;
+  font-size: 1em;
+}
+
+.fa-check {
+  color: white;
+}
+
+.fa-edit {
+  color: white;
+}
+
+.fa-trash-alt {
+  color: white;
+}
